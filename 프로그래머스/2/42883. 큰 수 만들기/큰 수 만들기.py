@@ -1,4 +1,5 @@
 # Stack
+#앞자리에 큰 숫자가 오는 것이 전체 수를 크게 만들 수 있음
 
 def solution(number, k):
     answer = [] 
