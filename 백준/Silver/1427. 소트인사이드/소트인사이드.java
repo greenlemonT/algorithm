@@ -1,18 +1,17 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String number=scanner.nextLine();
-        scanner.close();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String input = br.readLine();
 
-        char[] num=number.toCharArray();
-        Arrays.sort(num);
+        char[] a = input.toCharArray();
+        Arrays.sort(a);
 
-        StringBuilder result=new StringBuilder(new String(num));
-        result.reverse();
-        System.out.println(result);
+        StringBuilder sb = new StringBuilder(new String(a));
+        sb.reverse();
 
+        System.out.println(sb);
     }
 }
